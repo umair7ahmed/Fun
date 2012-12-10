@@ -1,31 +1,33 @@
 Given /^I am on the 'Courses' page$/ do
-  pending # express the regexp above with the code you wish you had
+  course course_path
 end
 
-Then /^in the "(.*?)", I should see "(.*?)"$/ do |arg1, arg2|
-  pending # express the regexp above with the code you wish you had
+Then /^in the "(.*?)", I should see "(.*?)"$/ do |tag, value|
+page.should have_css(tagm :text => value)
 end
 
 When /^I enter "(.*?)" for "(.*?)"$/ do |arg1, arg2|
-  pending # express the regexp above with the code you wish you had
+
 end
 
 When /^I select "(.*?)" for "(.*?)"$/ do |arg1, arg2|
-  pending # express the regexp above with the code you wish you had
+
 end
 
-When /^I click button "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+When /^I click button "(.*?)"$/ do |add|
+
 end
 
-Then /^I should see "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then /^I should see "(.*?)"$/ do |name|
+
 end
 
-When /^I follow the "(.*?)" link for "(.*?)"$/ do |arg1, arg2|
-  pending # express the regexp above with the code you wish you had
+When /^I follow the "(.*?)" link for "(.*?)"$/ do |link, cell_value|
+  within_table('Course list') do
+    within('th', :text => cell_value)do
+    find('c', :text => link).click
 end
 
 Then /^I should not see "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+
 end
