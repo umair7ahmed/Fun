@@ -62,3 +62,4 @@ it "should allow us to return the courses for a given student" do
   Course.for_student(@dan.id).latest(1).size.should == 1
 end 
 end 
+
