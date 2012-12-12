@@ -5,11 +5,13 @@ FUNN::Application.routes.draw do
   
 
   resources :courses
+  resources :static_pages
   
   resources :students
   resources :sessions, only: [:new, :create, :destroy]
   
   root :to => 'static_pages#home'
+  get '/home', :to => "static_pages#home"
   
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
