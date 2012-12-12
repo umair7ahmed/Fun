@@ -2,6 +2,7 @@ FUNN::Application.routes.draw do
   
   resources :schedules
   resources :professors
+  
 
   resources :courses
   
