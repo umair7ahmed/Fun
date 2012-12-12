@@ -2,7 +2,6 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
   def index
-    @title = "Courses"
     @courses = Course.all
 
     respond_to do |format|

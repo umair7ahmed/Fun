@@ -1,6 +1,6 @@
 <h1>Listing courses</h1>
 
-<table id="Course List">
+<table>
   <tr>
     <th>Name</th>
     <th>Number</th>

@@ -40,13 +40,13 @@ it "should create valid course factories" do
   @course1.shoudl be_valid
 end
 
-it "should accept valid course numbers" do
+it "should accept valid numbers" do
   should allow_value(1).for(:number)
   should allow_value(10).for(:number)
   should allow_value(23313).for(:number)
 end
 
-it "should not accept invalid course numers" do 
+it "should not accept invalid weights" do 
   should_not allow_value(0).for(:number)
   should_not allow_value(-4).for(:number)
   should_not allow_value(-4.55312).for(:number)

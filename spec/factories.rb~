@@ -27,6 +27,5 @@ FactoryGirl.define do
     last_name "Bob"
     email "bobdan@cmu.edu"
     association :course
-   end
 
 end

@@ -10,7 +10,7 @@ When /^I change Professor "(.*?)" to "(.*?)"$/ do |old, new|
   fill_in "Professor", :with => new
 end
 
-When /^I follow "(.*?)" link for "(.*?)"$/ do |link, cell_value|
+When /^I follow the "(.*?)" link for "(.*?)"$/ do |link, cell_value|
   within_table('Course List') do
     within('td', :text => cell_value) do
       find('a', :text => link).click

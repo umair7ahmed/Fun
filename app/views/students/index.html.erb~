@@ -1,6 +1,6 @@
 <h1>Listing students</h1>
 
-<table id="Student List">
+<table>
   <tr>
     <th>Firstname</th>
     <th>Lastname</th>
